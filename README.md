@@ -6,6 +6,12 @@ IUT Paris Descartes - 2019 - Enseignant : Cyrille Perois.
 Dans le cadre du cours de CDIN, Cyrille Perois a proposé de développer le site web d'une
 entreprise fictive : Be Biker Service.
 
+## Auteurs
+
+BERTHIER Nicolas : <nicolas-berthier@orange.fr>
+ESCOFFIER Vincent : <alainvincentesc@gmail.com>
+JALLAIS Adrien : <adrien.jallais@protonmail.com>
+
 ## Brief
 
 Cette entreprise est spécialisée dans la réparation, le conseil et la vente
