@@ -290,7 +290,7 @@ flex-direction: column;
     }
     .section--home .section--title{
     text-align:center;
-    padding-top:30%;
+    padding-top:15%;
     width:100%;
     }
 }
@@ -391,6 +391,11 @@ je fais disparaitre les div*/
     text-decoration: none;
     padding: 16px 32px;
     border-radius:15px;}
+
+.button--cover a:hover{
+        color: white;
+        background-color:#03a48f;
+}
 
 .section--service{
     background-image: url(home/home-04.jpg);
@@ -556,7 +561,8 @@ et de les séparer par un padding de 16 pixels*/
     margin-bottom:125px;
 }
 .section__item--historiquebouton a:hover{
-    color: grey;
+    color: white;
+    background-color:#03a48f;
 }
 .section__item--historiquebouton a{
     background-color: #39d6c0;
@@ -648,11 +654,8 @@ Un texte, avec une image de roue et un arrière-plan légèrement grisé, y comp
 /*grille cellule texte*/
 .service__cellule--texte {
 	font-family: 'Muli', sans-serif;
-    	line-height: 1.5;
-    	font-size: 16px;
-}
-.service__cellule--texte-texte{
-	align-self : flex-start;
+    line-height: 1.5;
+    font-size: 16px;
 }
 .service__logo{
 }
@@ -662,6 +665,7 @@ Un texte, avec une image de roue et un arrière-plan légèrement grisé, y comp
 }
 .service__description{
 }
+
 
 /*grille cellule photo*/
 
