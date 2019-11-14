@@ -8,9 +8,9 @@ entreprise fictive : Be Biker Service.
 
 ## Auteurs
 
-BERTHIER Nicolas : <nicolas-berthier@orange.fr> 
-ESCOFFIER Vincent : <alainvincentesc@gmail.com> 
-JALLAIS Adrien : <adrien.jallais@protonmail.com>
+BERTHIER Nicolas : <nicolas-berthier@orange.fr>  
+ESCOFFIER Vincent : <alainvincentesc@gmail.com>  
+JALLAIS Adrien : <adrien.jallais@protonmail.com>  
 
 ## Brief
 
