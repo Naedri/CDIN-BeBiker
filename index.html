@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device.width, initial-scale=1.0" />
+  <!---S'adapte à l'écran-->
+  <title>Be Biker - Prenons soin de votre vélo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://fonts.googleapis.com/css?family=Pathway Gothic One' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <section class="section section--header">
+    <header class="header">
+      <div class="wrapper">
+        <div class="section__logo" href="index.html"><a href="index.html"><img class="logo" src="logo.png"></a>
+        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">ACCUEIL</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="about.html">QUI SOMMES NOUS ?</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="service.html">SERVICES</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </section>
+
+
+  <!--Mettre des noms de classes qui font sens et qui respecte la méthodologie BEM-->
+  <section class="section section--home">
+    <div class="wrapper">
+      <h1 class="section--title">Nous prenons soin de votre vélo</h1>
+    </div>
+  
+  </section>
+
+
+  <!--Seconde partie de l'écran principal, de couleur noire-->
+
+  <section class="section section--alternate2">
+
+    <div class="wrapper">
+      <div class="grid grid__premiere"> <!--trouver mieux comme nom-->
+        <div class="grid__item grid__item--2-3 grid__bandeau">
+          <div class="grid__content">
+            <h2 class=grid--title>Nous aimons le vélo</h2>
+            <p class="grid--paragraph">Au-delà de l'objet, le vélo est pour nous une philosophie, un art de vivre. Vous
+              pouvez nous faire
+              confiance.</p>
+            <a class="grid--button" href="">En savoir plus</a>
+          </div>
+        </div>
+        <div class="grid__item grid__item--1-3 grid__backgroundBoy"></div>
+        <div class="grid__item grid__item--1-3 grid__backgroundBike"></div>
+        <div class="grid__item grid__item--2-3 grid__bandeau grid__bandeau--alternate">
+          <div class="grid__content">
+            <h3 class="grid--title">Un atelier professionnel</h3>
+            <p class="grid--paragraph">C'est dans notre atelier que nous réparons les vélos de nos clients et que nous
+              testons les nouveaux
+              produits.
+              Aucun détail ne nous échappe.</p>
+            <a class="grid--button" href="">En savoir plus</a>
+          </div>
+        </div>
+  </section>
+  <section class="section section--service">
+   
+  <div class="wrapper section__homeservice">
+
+  <div class = "section__service">
+      <img class="service__image" src="map-marker.png" alt="logo service à domicile (pointeur)">
+      <h4 class = service__title>À domicile</h4>
+      <p class = service__paragraph>Nous nous déplaçons pour récupérer et ramener votre vélo chez vous.</p>
+  </div>
+  <div class = "section__service">
+      <img class="service__image" src="support.png" alt="logo service support client (téléconseiller)">
+      <h4 class = service__title>Service client</h4>
+      <p class = service__paragraph>Nous nous déplaçons pour récupérer et ramener votre vélo chez vous.</p>
+  </div>
+  <div class = "section__service">
+      <img class="service__image" src="express.png" alt="logo service express (symbole 24H)">
+      <h4 class = service__title>Service express</h4>
+      <p class = service__paragraph>Nous nous déplaçons pour récupérer et ramener votre vélo chez vous.</p>
+  </div>
+  <div class = "section__service">
+      <img class="service__image" src="tools.png" alt="logo service réparation (outils)">
+      <h4 class = service__title>Services</h4>
+      <p class = service__paragraph>Nous nous déplaçons pour récupérer et ramener votre vélo chez vous.</p>
+  </div>
+
+  </div>
+
+  <!--Le bouton en savoir plus après les incones-->
+  <div class=section__link>
+    <a href="about.html" class="grid--button">En savoir plus</a>
+  </div>
+  
+</section>
+
+  <!--3eme partie photos avec gouttière-->
+<section class = "section section--alternate">
+    <div class="wrapper">
+        <div class="grid grid--gutters grid--flexcolonne">
+          <div class="grid__item grid__item--1-3"><div><img class = "alternate__image" src ="home/home-05.jpg" ></div></div>
+          <div class="grid__item grid__item--1-3"><div><img class = "alternate__image" src ="home/home-06.jpg" ></div></div>
+          <div class="grid__item grid__item--1-3"><div><img class = "alternate__image" src ="home/home-07.jpg" ></div></div>
+          <!-- ... -->
+        </div>
+        </div>
+</section>
+
+
+  <!--QUATRIEME PARTIE FOOTER NOIR-->
+<div class="section__footer--background">
+  <div class="wrapper">
+    <footer class="section section__footer">
+
+      <div class="section__item--left">
+      <!--Partie de gauche du footer contenant le logo-->
+        <img src="logo.png" alt="Logo Be Biker">
+        <aside>Be Biker Service </aside>
+        <aside>143, avenue de Versailles </aside>
+        <aside>75016 Paris </aside>
+        <aside>contact@bebiker.fr </aside>
+        <aside>01.23.45.67.89 </aside>
+      </div>
+
+      <div class="section__item--right">
+      <!--Partie de droite du footer-->
+        <nav>
+          <a href="index.html">Accueil</a>
+          <a href="about.html">Qui sommes nous ?</a>
+          <a href="services.html">Services</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+</div>
+
+</body>
+
+</html>
