@@ -648,8 +648,11 @@ Un texte, avec une image de roue et un arrière-plan légèrement grisé, y comp
 /*grille cellule texte*/
 .service__cellule--texte {
 	font-family: 'Muli', sans-serif;
-    line-height: 1.5;
-    font-size: 16px;
+    	line-height: 1.5;
+    	font-size: 16px;
+}
+.service__cellule--texte-texte{
+	align-self : flex-start;
 }
 .service__logo{
 }
@@ -659,7 +662,6 @@ Un texte, avec une image de roue et un arrière-plan légèrement grisé, y comp
 }
 .service__description{
 }
-
 
 /*grille cellule photo*/
 
