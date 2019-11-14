@@ -1,0 +1,732 @@
+/*Pour que l'ensemble du document partent à "0" sans marge ni padding*/
+/*Elements de définition pour l'ensemble du site*/
+*{
+    margin:0;
+    padding:0;
+}
+h1{
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 1.15;
+    font-family: 'Muli', sans-serif;
+}
+h2{
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 1.15;
+    font-family: 'Muli', sans-serif;
+}
+h2 + p{
+    padding-top:16px;
+    padding-bottom:16px;
+}
+h3{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.15;
+    font-family: 'Muli', sans-serif;
+}
+h4{
+    padding-top:26px;
+    padding-bottom:16px;
+}
+hr {
+    color:darkgrey;
+    width :35%;
+}
+
+/*##################
+####################
+####################
+WRAPPER*/
+.wrapper {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+
+
+
+
+/*#########################
+###########################
+###########################*/
+/*HEADER - MENU DU SITE */
+
+.header{
+    background-color:black;
+    font-family: 'Pathway Gothic One', sans-serif;    
+}
+
+.header .wrapper {
+    display: flex;
+    align-items: center;
+  }
+/*faire partir en colonne l'ensemble du header pour les mobiles*/
+  @media screen and (max-width:689px){
+    .header .wrapper{
+        display:flex;
+        flex-direction:column;
+    }
+}
+
+
+.logo{
+    padding: 16px;
+    display: block;
+    max-width: 100%;
+}
+
+
+
+.nav{
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+}
+
+
+.section__logo{
+    display: flex;
+    flex-basis:50%;
+}
+
+/*Class contenant les liens de navigation principaux*/
+.nav__list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+}
+/*Faire partir en colonne les liens de navigations pour les mobiles*/
+@media screen and (max-width:689px){
+    .nav__list{
+        display:flex;
+        flex-direction:column;
+        white-space: nowrap;
+    }
+}
+
+
+/*Class pour mise en forme des liens de navigation principaux*/
+.nav__item{
+   flex-shrink: 0;
+   flex-wrap: nowrap;
+}
+/*Créer un petit espacement entre les liens de navigation lorsqu'ils sont en colonne pour
+version mobile*/
+@media screen and (max-width:689px){
+    .nav__item{
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+}
+
+/*Mise en forme des liens de navigation principaux*/
+.nav__item:hover{
+    background-color:#232425;
+    /*55px sur le top/bottom et 20px sur le left/right*/
+    padding-top:22%;
+    padding-bottom:22%;
+
+}
+@media screen and (max-width:689px){
+    .nav__item:hover{
+        background-color:#232425;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left: 100%;
+        padding-right:100%;
+    }
+}
+
+.nav__link {
+    padding: 24px 16px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+  }
+
+
+
+  .nav__link:hover,
+  .nav__link:focus {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .nav__link--current {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  
+
+
+
+
+/*######################
+########################
+########################*/
+/*FOOTER DU SITE*/
+.section__footer--background{
+    background-color:black;
+    width:100%;
+}
+
+.section__footer{
+    height:500px;
+    display: flex;
+    box-sizing:border-box;
+    flex-direction:row;
+}
+/*Mettre en colonne le footer en version mobile*/
+@media screen and (max-width:689px){
+    .section__footer{
+        display:flex;
+        flex-direction:column;
+    }
+}
+.section__footer .section__item--left{
+    flex-basis:50%;/*A voir ça fait peut-être sortir du cadre quand version mobile*/
+    padding-top:100px;
+    /*padding-left:20%;*/
+    color:grey;
+    font-style:italic;
+}
+.section__footer .section__item--right{
+    flex-basis:50%;
+    padding-top:100px;
+}
+@media screen and (max-width:689px){
+    .section__footer .section__item--right{
+        padding-top:5%;
+    }
+}
+.section__footer .section__item--right a{
+    text-decoration: none;
+    padding:10px 10px;
+    color:#39d6c0
+}
+
+@media screen and (max-width:689px){
+    .section__footer .section__item--right a{
+        padding-bottom:15px;
+    }
+}
+.section__footer .section__item--right a:hover{
+    color: #03a48f;
+}
+
+
+
+
+
+
+
+
+
+
+/*###################################
+#####################################
+#####################################*/
+/*CORPS DE LA PREMIERE PAGE DU SITE*/
+
+/*PREMIERE PARTIE DU ALTERNATE SECTION PAGE PREMIERE*/
+
+.section{
+    font-family: 'Muli', sans-serif;
+}
+
+.section--alternate{
+    background-color: white;
+}
+
+.section--home{
+    background-image:
+    linear-gradient(to right, #fff 0%, #fff 50%, rgba(255,255,255,0) 50%),
+    url(home/home-01.jpg);
+    background-size: cover; 
+    display: flex;
+    padding: 0;
+    height: 100vh;
+}
+
+/*recentre la photo du vélo lorsqu'on passe en mode tablette*/
+@media screen and (max-width:789px){
+    .section--home{
+        background-position:center;
+    }
+}
+
+.section--home .wrapper{
+    display: flex;
+    align-items: center;
+}
+.section--home .section--title{
+    font-size:64px;
+    width: 50%;
+}
+
+.section__item--right nav{
+display: flex;
+flex-direction: column;
+
+}
+.section__item--left img{
+    padding-bottom: 16px;
+}
+/*gradient vers le bas pour mettre en colonne le vélo et le texte "nous aimons le vélo"*/
+@media screen and (max-width:689px){
+    .section--home{
+    background-image:
+    linear-gradient(to bottom, #fff 0%, #fff 50%, rgba(255,255,255,0) 50%),
+    url(home/home-01.jpg);
+    background-size: cover; 
+    display: flex;
+    padding: 0;
+    height: 100vh;
+    flex-direction:column;
+    }
+    .section--home .section--title{
+    text-align:center;
+    padding-top:15%;
+    width:100%;
+    }
+}
+
+/*DEUXIEME PARTIE DE LA PREMIERE PAGE*/
+/*Début de la section avec le fond noir + vélo, ici fond d'écran etc*/
+.section--alternate2{
+    display: flex;
+    flex-direction: column;
+    background-position: bottom;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-color: black;
+}
+/*Partie GLOBALE image avec "Nous aimons le vélo"*/
+.grid {
+  /* Étape 2 : on utilise flexbox pour afficher nos grids */
+  display: flex;
+  margin-top:10%;
+
+  /* Étape 4 : on fait en sorte que les éléments qui dépassent du container passent à la ligne */
+  flex-wrap: wrap;
+}
+@media screen and (max-width:689px){
+    .grid__premiere{
+        display:block;
+    }
+}
+
+
+.grid__item {
+  /* Étape 3 : on empêche les items de rétrécir et de grossir automatiquement */
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+
+/* Étape 5 : variantes 100%, 1/3, 2/3 et 1/4 des items */
+
+.grid__backgroundBoy{
+    background-image: url(home/home-02.jpg);
+    background-size:cover;
+    background-position: center;
+}
+.grid__backgroundBike{
+    background-image: url(home/home-03.jpg);
+    background-size:cover;
+    background-position: center;
+}
+/*en version mobile la photo de l'homme et celle du vélo disparaissent,
+je fais disparaitre les div*/
+@media screen and (max-width:689px){
+    .grid__backgroundBoy, .grid__backgroundBike{
+        display:none;
+    }
+}
+
+.grid__item--1-3 {
+  flex-basis: calc(100% / 3);
+}
+.grid__item--1-4 {
+    flex-basis: calc(100% / 4);
+  }
+  
+.grid__item--2-3 {
+  flex-basis: calc(2 * 100% / 3);
+}
+.grid__bandeau .grid__content{
+    padding:10%;
+}
+.grid--paragraph{
+    padding-top:10%;
+    padding-bottom:10%;
+}
+/* Étape 6 : ajout de gouttières */
+.grid--gutters {
+  margin: 0 -16px;
+  flex-wrap: nowrap;
+  padding-top: 16px;
+  padding-bottom:16px;
+}
+
+.grid--gutters .grid__item {
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+.grid__bandeau{
+    background-color:#39d6c0;
+}
+.grid__bandeau--alternate{
+    background-color: white;
+
+}
+.grid--button{ 
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius:15px;}
+
+.button--cover a:hover{
+        color: white;
+        background-color:#03a48f;
+}
+
+.section--service{
+    background-image: url(home/home-04.jpg);
+    }
+
+/*Du fait de l'augmentation de la hauteur de la DIV en format tablet et mobile
+j'impose à l'image en background d'être "en bas" et je mets un fond noir supplémentaire*/
+@media screen and (max-width:789px){
+    .section--service{
+        background-position:bottom;
+        background-repeat:no-repeat;
+        background-color:black;
+        }
+    }
+
+
+.alternate__image{
+    max-width: 100%;
+    height: auto;
+}
+.section--service .wrapper{
+    display: flex;
+}
+.section__service{
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    padding-right:10%;
+    padding-top:10%;
+    padding-bottom:10%;
+}
+/*passage en mode tablet (équivalent de section--service/wrapper)*/
+@media screen and (max-width:789px){
+    .section__homeservice{
+        padding-bottom:60px;
+        padding-top:60px;
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: row;
+    }
+}
+/*passage en mode mobile les icones en bas de la première page
+Fait passer en mode colonne (équivalent de section--service/wrapper)*/
+@media screen and (max-width:689px){
+    .section__homeservice{
+        padding-bottom:60px;
+        padding-top:60px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+.service__image{
+    padding-bottom: 20% ;
+    border-bottom:gray solid 1px;
+    max-width: 80px;
+}
+/*Lorsqu'on passe en mode tablette (etc), les div changent de taille, 
+les images ont une taille définie à partir de la div, ce qui pose problème*/
+@media screen and (max-width:689px){
+    .section__homeservice .service__image{
+        max-width:80px;
+        padding-bottom:10%;
+    }
+}
+.service__title,.service__paragraph{
+    padding-top:15px;
+    padding-bottom: 15px;
+    color:white;
+}
+
+.section__img{
+    display:flex;
+    flex-basis:30%;
+}
+
+
+.section__link{
+    text-align: center;
+    padding-top:5px;
+    padding-bottom:60px;
+}
+.section__link .grid--button{
+    background-color: #39d6c0;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius:15px;
+}
+/*Mettre en version mobile les images du bas de la première page en colonne*/
+@media screen and (max-width:689px){
+    .grid--flexcolonne{
+        flex-wrap:wrap;
+        display:flex;
+        flex-direction:column;
+    }
+}
+@media screen and (max-width:689px){
+    .grid--flexcolonne .alternate__image{
+        margin-top:16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*"############################
+###############################
+###############################*/
+/*DEUXIEME PAGE - ABOUT*/
+
+
+/*L'entete "qui sommes-nous?"*/
+.section__entete{
+    background-color:#f7f7f7;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+/*Présentation de l'histoire de l'entreprise et des deux créateurs*/
+.section__historique{
+    display:flex;
+    flex-direction:row;
+}
+/*espace sous les titre*/
+.section__historique h3{
+    margin-bottom:15px;
+}
+/*fais passer les articles l'un en dessous des autres en version mobile*/
+@media screen and (max-width:689px){
+    .section__historique{
+        display:flex;
+        flex-direction:column;
+    }
+}
+
+/*Permet de créer les deux zones de texte de l'historique
+et de les séparer par un padding de 16 pixels*/
+.grid__historique--gutters{
+    margin:15px -16px;
+}
+.grid__historique--gutters .grid__historique__item--1-2{
+    padding:35px 16px;
+    box-sizing:border-box;
+}
+.grid__historique__item--1-2{
+    flex-basis:50%;
+}
+
+/*Bouton "Nos sorvices"*/
+.section__item--historiquebouton{
+    text-align:center;
+    margin-top:75px;
+    margin-bottom:125px;
+}
+.section__item--historiquebouton a:hover{
+    color: white;
+    background-color:#03a48f;
+}
+.section__item--historiquebouton a{
+    background-color: #39d6c0;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius:5px;
+}
+/*Dernière partie avec la présentation de l'atelier
+Un texte, avec une image de roue et un arrière-plan légèrement grisé, y compris hors wrapper*/
+.section__atelier .section__item--text{
+    padding-bottom:30px;
+    margin-bottom:40px;
+}
+/*espace sous les titre, potentiellement le mettre sur tous les h1 ? à voir */
+.section__atelier .section__item--text h1{
+    padding-bottom:15px;
+}
+
+.section__atelier .section__item--roueimage img{
+    max-width: 100%;
+    margin-top:-30px;
+}
+/*background grisé en dehors du wrapper*/
+.section__item--backgroundcolor{
+    background-color:#f7f7f7;
+}
+
+
+
+
+
+
+
+/*####################
+######################
+######################*/
+/*PAGE DES SERVICES*/
+
+/* ****************** PAGE SERVICE ****************** */
+/*https://css-tricks.com/snippets/css/a-guide-to-flexbox/*/
+
+.service{  
+    font-family: 'Muli', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+/* Partie ENTETE */
+.service__entete{
+    background-color:#f7f7f7;
+}
+.service__entete h1{
+    padding-top:48px;
+    padding-bottom: 16px;
+}
+.service__entete p{
+    padding-bottom: 48px;
+}
+
+/* Partie CONTENUE */
+/*grille*/
+.service__grille{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row ;
+	justify-content: center;
+    align-items: center;
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+}
+.service__cellule {
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin-top: 48px;
+    margin-bottom: 48px;
+
+} 
+/*grille repartition*/
+.service__cellule--1-1 {
+    flex-basis: calc(100%);
+}
+.service__cellule--1-2 {
+    flex-basis: calc(100%/2);
+}
+
+/*grille cellule texte*/
+.service__cellule--texte {
+	font-family: 'Muli', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+.service__cellule--texte-texte {
+	align-self : flex-start;
+}
+.service__logo{
+}
+.service__titre{
+    padding-top:48px;
+    padding-bottom: 48px;
+}
+.service__description{
+}
+
+
+/*grille cellule photo*/
+
+.service__cellule--photo{
+}
+.service__photo{
+    max-width: 100%;
+    height: auto;
+}
+
+.service__cellule--photo-BikeRoom{
+    background-image: url(services/services-01.jpg);
+    height:566px;
+	background-size:cover;
+    background-position: center;
+	background-repeat: repeat;
+	/*background-attachment: fixed;*/
+	background-size: cover;
+}
+.service__cellule--photo-BoyMickey{
+    background-image: url(services/services-02.jpg);
+    height:500px;
+	background-size:cover;
+    background-position: center;
+	background-repeat: repeat;
+	/*background-attachment: fixed;*/
+	background-size: cover;
+}
+
+/*grille  gouttiere*/
+/*  normale (`16px`)
+    large (`48px`)  */
+.service__grille--gouttiere{
+    margin: 0 -16px;
+}
+
+.service__grille--gouttiere .service__cellule{
+	padding: 0 16px;
+	box-sizing: border-box;
+}
+
+/*media query*/
+@media screen and (max-width:689px){
+    .service__cellule--photo{
+        display :none;
+    }
+    .service__cellule--1-2{
+    	flex-basis: calc(100%);
+    }
+}
+@media screen and (max-width:769px){
+
+}
+
+
+/* Partie FOOTER */
+/*footer*/
+/*.footer .wrapper {
+    display: flex;
+    align-items: center;
+  }*/
