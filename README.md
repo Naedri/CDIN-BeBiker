@@ -1,5 +1,5 @@
 # CDIN-BeBiker
-IUT Paris Descartes - 2019.
+IUT Paris Descartes - 2019 - Enseignant : Cyrille Perois.
 
 ## Projet Conception de Documents et d'Interfaces Numériques
 
