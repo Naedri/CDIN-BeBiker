@@ -3,7 +3,7 @@ IUT Paris Descartes - 2019.
 
 ## Projet Conception de Documents et d'Interfaces Numériques
 
-Dans le cadre du cours de CDIN, Cyrille Perois a propposé de développer le site web d'une
+Dans le cadre du cours de CDIN, Cyrille Perois a proposé de développer le site web d'une
 entreprise fictive : Be Biker Service.
 
 ## Brief
