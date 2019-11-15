@@ -286,7 +286,7 @@ flex-direction: column;
 @media screen and (max-width:689px){
     .section--home{
     background-image:
-    linear-gradient(to bottom, #fff 0%, #fff 50%, rgba(255,255,255,0) 50%),
+    linear-gradient(to bottom, #fff 0%, #fff 60%, rgba(255,255,255,0) 60%),
     url(home/home-01.jpg);
     background-size: cover; 
     display: flex;
