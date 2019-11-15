@@ -188,11 +188,17 @@ version mobile*/
     }
 }
 .section__footer .section__item--left{
-    flex-basis:50%;/*A voir ça fait peut-être sortir du cadre quand version mobile*/
+    flex-basis:50%;
     padding-top:100px;
-    /*padding-left:20%;*/
     color:grey;
     font-style:italic;
+    /*text-decoration:none;*/
+}
+/*L'email est mis sous forme de lien "mailto", je retire la décoration
+et lui met une couleur grise comme le reste du footer*/
+.section__item--left a{
+    text-decoration:none;
+    color:grey;
 }
 .section__footer .section__item--right{
     flex-basis:50%;
@@ -211,7 +217,7 @@ version mobile*/
 
 @media screen and (max-width:689px){
     .section__footer .section__item--right a{
-        padding-bottom:15px;
+    padding-bottom:15px;
     }
 }
 .section__footer .section__item--right a:hover{
@@ -427,7 +433,9 @@ j'impose à l'image en background d'être "en bas" et je mets un fond noir suppl
     padding-top:10%;
     padding-bottom:10%;
 }
-/*passage en mode tablet (équivalent de section--service/wrapper)*/
+/*passage en mode tablet, les icones occupent deux lignes 2x2
+Les icones restent sur la gauche comme sur le modèle /!\
+(équivalent de section--service/wrapper)*/
 @media screen and (max-width:789px){
     .section__homeservice{
         padding-bottom:60px;
@@ -438,7 +446,8 @@ j'impose à l'image en background d'être "en bas" et je mets un fond noir suppl
     }
 }
 /*passage en mode mobile les icones en bas de la première page
-Fait passer en mode colonne (équivalent de section--service/wrapper)*/
+Les icones sont en colonne collées sur la gauche comme sur le modèle /!\
+(équivalent de section--service/wrapper)*/
 @media screen and (max-width:689px){
     .section__homeservice{
         padding-bottom:60px;
@@ -586,6 +595,7 @@ Un texte, avec une image de roue et un arrière-plan légèrement grisé, y comp
 .section__atelier .section__item--roueimage img{
     max-width: 100%;
     margin-top:-30px;
+    margin-bottom:30px;
 }
 /*background grisé en dehors du wrapper*/
 .section__item--backgroundcolor{
@@ -629,7 +639,7 @@ Un texte, avec une image de roue et un arrière-plan légèrement grisé, y comp
 .service__grille{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row ;
+    flex-direction: row;
 	justify-content: center;
     align-items: center;
     padding-top: 48px;
@@ -641,8 +651,8 @@ Un texte, avec une image de roue et un arrière-plan légèrement grisé, y comp
     flex-grow: 0;
     margin-top: 48px;
     margin-bottom: 48px;
-
 } 
+
 /*grille repartition*/
 .service__cellule--1-1 {
     flex-basis: calc(100%);
@@ -657,23 +667,18 @@ Un texte, avec une image de roue et un arrière-plan légèrement grisé, y comp
     line-height: 1.5;
     font-size: 16px;
 }
+
 .service__cellule--texte-texte {
 	align-self : flex-start;
 }
-.service__logo{
-}
+
 .service__titre{
     padding-top:48px;
     padding-bottom: 48px;
 }
-.service__description{
-}
-
 
 /*grille cellule photo*/
 
-.service__cellule--photo{
-}
 .service__photo{
     max-width: 100%;
     height: auto;
@@ -719,14 +724,5 @@ Un texte, avec une image de roue et un arrière-plan légèrement grisé, y comp
     	flex-basis: calc(100%);
     }
 }
-@media screen and (max-width:769px){
-
-}
 
 
-/* Partie FOOTER */
-/*footer*/
-/*.footer .wrapper {
-    display: flex;
-    align-items: center;
-  }*/
