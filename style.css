@@ -396,7 +396,8 @@ je fais disparaitre les div*/
     font-weight: bold;
     text-decoration: none;
     padding: 16px 32px;
-    border-radius:15px;}
+    border-radius:15px;
+}
 
 .button--cover a:hover{
         color: white;
@@ -566,8 +567,10 @@ et de les séparer par un padding de 16 pixels*/
 /*Bouton "Nos sorvices"*/
 .section__item--historiquebouton{
     text-align:center;
+    font-family: 'Muli', sans-serif;
     margin-top:75px;
     margin-bottom:125px;
+    
 }
 .section__item--historiquebouton a:hover{
     color: white;
@@ -579,8 +582,9 @@ et de les séparer par un padding de 16 pixels*/
     font-weight: bold;
     text-decoration: none;
     padding: 16px 32px;
-    border-radius:5px;
+    border-radius:15px;
 }
+
 /*Dernière partie avec la présentation de l'atelier
 Un texte, avec une image de roue et un arrière-plan légèrement grisé, y compris hors wrapper*/
 .section__atelier .section__item--text{
