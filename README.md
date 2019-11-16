@@ -33,10 +33,10 @@ Le site web est composé de 3 pages :
 * Une page « Services », qui présente plus en détails les services proposés par l'entreprise
 
 Vous trouverez les maquettes (formats desktop, tablette et mobile) dans le
-dossier [maquettes](./maquettes).
+dossier [maquettes](https://github.com/Naedri/CDIN-BeBiker/tree/master/NOTICE/maquettes).
 
-L'ensemble des images utilisées sont fournies dans le dossier
-[images](./images).
+L'ensemble des images utilisées sont fournies dans les dossiers [home](https://github.com/Naedri/CDIN-BeBiker/home), 
+[about](https://github.com/Naedri/CDIN-BeBiker/about) et [services](https://github.com/Naedri/CDIN-BeBiker/services).
 
 ## Détails
 
