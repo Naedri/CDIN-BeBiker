@@ -12,7 +12,7 @@ BERTHIER Nicolas : <nicolas-berthier@orange.fr>
 ESCOFFIER Vincent : <alainvincentesc@gmail.com>  
 JALLAIS Adrien : <adrien.jallais@protonmail.com>  
 
-## Brief - Cyrile Perois
+## Briefing de Cyrille Perois
 
 Cette entreprise est spécialisée dans la réparation, le conseil et la vente
 d'équipements autour du vélo. C'est une entreprise locale qui existe depuis
