@@ -4,7 +4,7 @@ IUT Paris Descartes - 2019 - Enseignant : PEROIS Cyrille.
 ## Projet Conception de Documents et d'Interfaces Numériques
 
 Dans le cadre du cours de CDIN, Cyrille Perois a proposé de développer le site web d'une
-entreprise fictive : Be Biker Service. Une version en ligne du site est disponible à l'adresse suivante : [https://cdin-bebiker-three-omega.now.sh].
+entreprise fictive : Be Biker Service. Une version en ligne du site est disponible à l'adresse suivante : https://cdin-bebiker-three-omega.now.sh .
 
 ## Auteurs
 
